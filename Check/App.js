@@ -2,13 +2,14 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View } from 'react-native';
 import Register from './Screens/Register'
 import Login from './Screens/Login'
+import StackNavigator from './StackNavigator';
+import Challenge18 from './Screens/Challenge18';
+import Challenge25 from './Screens/Challenge25 ';
+
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Register></Register>
-      <StatusBar style="auto" />
-    </View>
+    <Challenge18></Challenge18>
   );
 }
 

@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
-const LogInScreen = () => {
+const LogInScreen = ({navigation}) => {
 
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("") 
@@ -62,7 +62,7 @@ const LogInScreen = () => {
                     <Text style={{ textAlign: 'center', fontWeight: 'bold', fontSize: 16, color: 'white' }} >Login</Text>
                 </Pressable>
 
-                <Pressable style={{ marginTop: 10 }}>
+                <Pressable onPress={() => navigation.navigate ('Register')} style={{ marginTop: 10 }}>
                     <Text style={{ textAlign: 'center', fontSize: 16 }} >Don't have an account? <Text style={{ fontWeight: '500', color: 'purple' }}>Sign Up</Text></Text>
                 </Pressable>
 

@@ -7,7 +7,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 
-const RegisterScreen = () => {
+const RegisterScreen = ({navigation}) => {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     const [name, setName] = useState ("")
@@ -65,7 +65,7 @@ const RegisterScreen = () => {
                     <Text style={{ textAlign: 'center', fontWeight: 'bold', fontSize: 16, color: 'white' }} >Register</Text>
                 </Pressable>
 
-                <Pressable style={{ marginTop: 10 }}>
+                <Pressable onPress={() => navigation.navigate ('Login')} style={{ marginTop: 10 }}>
                     <Text style={{ textAlign: 'center', fontSize: 16 }} >Already have an account? <Text style={{ fontWeight: '500', color: 'purple' }}>Sign In</Text></Text>
                 </Pressable>
 
