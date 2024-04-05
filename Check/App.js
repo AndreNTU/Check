@@ -5,11 +5,12 @@ import Login from './Screens/Login'
 import StackNavigator from './StackNavigator';
 import Challenge18 from './Screens/Challenge18';
 import Challenge25 from './Screens/Challenge25 ';
+import About from './Screens/About';
 
 
 export default function App() {
   return (
-    <Challenge18></Challenge18>
+    <About></About>
   );
 }
 
