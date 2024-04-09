@@ -25,7 +25,7 @@ const About = () => {
                     store, and be sure to mention any addition features you'd
                     like to request!</Text>
 
-                <View style = {{marginTop: 265}}>
+                <View style = {{marginTop: 225}}>
                     <AntDesign style={{ alignSelf: 'center' }} name="hearto" size={20} color="red" />
                     <Text style={{ marginTop: 0, color: 'blueviolet', fontSize: 16, textAlign: 'center' }}> Version 1.0.0</Text>
                 </View>

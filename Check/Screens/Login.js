@@ -21,7 +21,7 @@ const LogInScreen = ({navigation}) => {
     
                 if (token) {
                     setTimeout(() => {
-                        navigation.replace("Home")
+                        navigation.replace("Main")
                     }, 400)
                 }
             } catch (error) {
@@ -44,7 +44,7 @@ const LogInScreen = ({navigation}) => {
             console.log(response)
             const token = response.data.token
             AsyncStorage.setItem("authToken", token)
-            navigation.navigate("Home")
+            navigation.navigate("Main")
         }).catch((error) => {
             Alert.alert("Login error")
             console.log("error", error)
@@ -86,14 +86,7 @@ const LogInScreen = ({navigation}) => {
                         placeholderTextColor={'gray'} style={{ color: 'gray', marginVertical: 10, width: 300, fontSize: password ? 16 : 16 }} placeholder="enter your Password" />
                 </View>
 
-                <View>
-                    <View style={{  flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginTop: 12,}}>
-                        <Text>Keep me logged in</Text>
-                        <Text>Forgot Password</Text>
-                    </View>
-                </View>
-
-                <View style={{ marginTop: 45 }} />
+                <View style={{ marginTop: 35 }} />
 
                 <Pressable
                 onPress = {Login}
